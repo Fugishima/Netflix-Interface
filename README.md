@@ -1,3 +1,13 @@
+# Netflix Interface
+
+## Apresentação
+
+### O projeto apresenta uma releitura da interface do Netflix.
+### A proposta foi desenvolver uma SPA em React para consumir os dados da API do The Movie Database.
+### A aplicação reflete apenas a interface por tanto funções como player e adicionar a playlist não foram implementadas.
+
+------------------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
