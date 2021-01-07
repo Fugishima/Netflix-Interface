@@ -77,3 +77,31 @@
     font-size: 18px;
     color: #999;
 }
+
+@media (max-width:760px){
+    .spotlight{
+        height: 90vh;
+    }
+
+    .name{
+        font-size:40px;
+    }
+
+    .info{
+        font-size:16px;
+    }
+
+    .overview{
+        font-size:14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .watch_btn, .add_btn{
+        font-size:10px;
+    }
+
+    .genres{
+        font-size:14px;
+    }
+}

@@ -57,3 +57,9 @@
 .row:hover .left_arrow, .row:hover .right_arrow {
     opacity: 1;
 }
+
+@media (max-width: 760px){
+    .left_arrow, .right_arrow {
+        opacity: 1;
+    }
+}
