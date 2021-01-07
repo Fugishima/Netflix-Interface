@@ -3,6 +3,7 @@ import './style.css'
 
 import TMDb from '../../connection/TMDb'
 
+import Header from '../Header/index'
 import Spotlight from '../Spotlight/index'
 import Row from '../Row/index'
 
@@ -34,8 +35,28 @@ const App = () => {
         loadSpotlight()
     }, [])
 
+    // Função que define a opacidade do Header.
+    const [ blackHeader, setBlackHeader ] = useState(false)
+    useEffect(() => {
+        const scrollListener = () => {
+            if(window.scrollY > 10){
+                setBlackHeader(true)
+            } else {
+                setBlackHeader(false)
+            }
+        }
+
+        window.addEventListener('scroll', scrollListener)
+
+        return () => {
+            window.removeEventListener('scroll', scrollListener)
+        }
+    }, [])
+
     return (
         <div>
+            <Header isBlack={blackHeader}/>
+
             {spotlightData &&
             <Spotlight item={spotlightData}/>
             }
