@@ -7,6 +7,7 @@ import Header from '../Header/index'
 import Spotlight from '../Spotlight/index'
 import Row from '../Row/index'
 import Footer from '../Footer/index'
+import Loading from '../Loading/index'
 
 const App = () => {
     // Função que carrega as listas de séries e filmes.
@@ -69,6 +70,11 @@ const App = () => {
             </section>
 
             <Footer/>
+
+            {genreList.length <= 0 &&
+                <Loading/>
+            }
+
         </div>
     )
 }
