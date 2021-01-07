@@ -6,6 +6,7 @@ import TMDb from '../../connection/TMDb'
 import Header from '../Header/index'
 import Spotlight from '../Spotlight/index'
 import Row from '../Row/index'
+import Footer from '../Footer/index'
 
 const App = () => {
     // Função que carrega as listas de séries e filmes.
@@ -66,6 +67,8 @@ const App = () => {
                     <Row key={key} title={item.title} items={item.items}/>
                 ))}
             </section>
+
+            <Footer/>
         </div>
     )
 }
