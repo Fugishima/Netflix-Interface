@@ -5,6 +5,7 @@
 ### O projeto apresenta uma releitura da interface do Netflix.
 ### A proposta foi desenvolver uma SPA em React para consumir os dados da API do The Movie Database.
 ### A aplicação reflete apenas a interface por tanto funções como player e adicionar a playlist não foram implementadas.
+### A aplicação pode ser conferida <a href="http://netflix-interface.herokuapp.com"> aqui </a>
 
 ------------------------------------------------------------------------------------------------------------------------
 
